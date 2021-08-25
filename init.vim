@@ -18,9 +18,9 @@ Plug 'sheerun/vim-polyglot'
 Plug 'morhetz/gruvbox'
 Plug 'rafi/awesome-vim-colorschemes'  
 Plug 'vim-airline/vim-airline'
-Plug 'Yggdroot/indentLine' 
 Plug 'HerringtonDarkholme/yats.vim' " TS Syntax
 Plug 'tomasiser/vim-code-dark'
+Plug 'jiangmiao/auto-pairs'
 
 " Initialize plugin system
 call plug#end()
@@ -35,8 +35,6 @@ set number
 set hidden
 set cursorline
 set expandtab
-set autoindent
-set smartindent
 set shiftwidth=4
 set tabstop=4
 set encoding=utf8
@@ -267,3 +265,10 @@ nnoremap <c-x> :bp \|bd #<cr>
 
 let g:ale_completion_enabled = 0
 let g:ale_linters = {'python': ['flake8', 'pylint'], 'javascript': ['eslint']}
+
+set clipboard=unnamedplus
+
+nmap <Leader>r :NERDTreeFocus<cr>R<c-w><c-p>
+
+nnoremap <PageUp>   :bprevious<CR>
+nnoremap <PageDown> :bnext<CR>
