@@ -272,3 +272,5 @@ nmap <Leader>r :NERDTreeFocus<cr>R<c-w><c-p>
 
 nnoremap <PageUp>   :bprevious<CR>
 nnoremap <PageDown> :bnext<CR>
+
+let NERDTreeShowHidden=1
