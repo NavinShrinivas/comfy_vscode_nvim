@@ -1,4 +1,4 @@
-" Specify a directory for plugins
+" Specify a directory for plugis
 call plug#begin('~/.vim/plugged')
 
 Plug 'dense-analysis/ale'
@@ -274,3 +274,8 @@ nnoremap <PageUp>   :bprevious<CR>
 nnoremap <PageDown> :bnext<CR>
 
 let NERDTreeShowHidden=1
+
+" map CTRL-A to beginning-of-line (insert mode)
+imap <C-a> <esc><S-^>i
+noremap <C-c><esc>
+command wf :wq :q
